@@ -1,0 +1,41 @@
+---
+title: "Mastering Shiny notes"
+format: html
+editor: visual
+---
+
+# Getting started
+
+## Your first Shiny app
+
+### Introduction
+
+Every Shiny app had two components:
+
+-   the user interface (UI) which defines how the app looks
+
+-   the server function which defines how the app works
+
+To install Shiny:
+
+```{r}
+#| eval: false
+install.packages("shiny")
+
+```
+
+Load the package in the current R session:
+
+```{r}
+library(shiny)
+```
+
+### Create app directory and file
+
+The simplest way to create a Shiny app is to create a new directory for the app, and put a single file called `app.R` in it. This file will be used to tell Shiny both how the app should look and how it should behave.
+
+::: callout-tip
+## Create a new app
+
+In an empty app.R file, type "shinyapp" then Shift+Tab to add the app boilerplate
+:::
